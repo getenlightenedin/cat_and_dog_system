@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LungLung</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="./images/dinosaur.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -25,14 +24,11 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">領養<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">犬<span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="blog.html">喵咪</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">貓</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="content.html">狗勾</a>
-                </li> -->
             </ul>
         </div>
     </nav>
@@ -44,27 +40,24 @@
                 <div class="col-12 my-5">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-3 p-3">
-                                <label for="inputCity">關鍵字搜尋</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="form-group col-md-3 p-3">
-                                <label for="inputState">品種</label>
-                                <select id="inputState" class="form-control">
+
+                            <div class="form-group col-md-4 p-3">
+                                <label for="inputState1">品種</label>
+                                <select id="inputState1" class="form-control">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-3 p-3">
-                                <label for="inputState">毛色</label>
-                                <select id="inputState" class="form-control">
+                            <div class="form-group col-md-4 p-3">
+                                <label for="inputState2">毛色</label>
+                                <select id="inputState2" class="form-control">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-3 p-3">
-                                <label for="inputState">性別</label>
-                                <select id="inputState" class="form-control">
+                            <div class="form-group col-md-4 p-3">
+                                <label for="inputState3">性別</label>
+                                <select id="inputState3" class="form-control">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
@@ -80,162 +73,127 @@
     </div>
     <!--/banner-info-->
 
-    <div class="row m-3">
-        <div id="home-sidebar" class="col-12 col-md-3 ">
+    <div class="row m-3 mx-auto">
+        <div id="home-sidebar" class="col-12 col-md-3">
             <div id="SelectValue" class="border rounded p-2 mb-5">
-                此處顯示篩選項目
+                選擇器
             </div>
-            <div id="SelectValue" class="border rounded p-2">
-                此處顯示廣告
+            <div id="Cooperation" class="border rounded p-2 mb-5">
+                合作對象
+            </div>
+            <div id="AdSence" class="border rounded p-2 mb-5">
+                廣告
             </div>
         </div>
-        <div id="home-connect" class="row col-12 col-md-9 ">
-            <!-- <div class="col-12 col-md-4 p-1">
-                <a href="./images/pic02.jpg">
-                    <img src="./images/pic02.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 p-1">
-                <a href="./images/pic02.jpg">
-                    <img src="./images/pic02.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 p-1">
-                <a href="./images/pic02.jpg">
-                    <img src="./images/pic02.jpg" alt="">
-                </a>
-            </div>
+        <div id="home-connect" class="row col-12 col-md-9 mx-auto">
 
-            <div class="col-12 col-md-8 p-1">
-                <a href="./images/pic02.jpg">
-                    <img src="./images/pic02.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 p-0">
-                <div class="p-1">
-                    <a href="./images/pic02.jpg">
-                        <img src="./images/pic02.jpg" alt="">
-                    </a>
-                </div>
-                <div class="p-1">
-                    <a href="./images/pic02.jpg">
-                        <img src="./images/pic02.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 p-0">
-                <div class="p-1">
-                    <a href="./images/pic02.jpg">
-                        <img src="./images/pic02.jpg" alt="">
-                    </a>
-                </div>
-                <div class="p-1">
-                    <a href="./images/pic02.jpg">
-                        <img src="./images/pic02.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-8 p-1">
-                <a href="./images/pic02.jpg">
-                    <img src="./images/pic02.jpg" alt="">
-                </a>
-            </div> -->
             <!-- 參考資料 https://www.minwt.com/webdesign-dev/html/16797.html  -->
             <div id="imglist" class="container">
                 <!-- row-1 -->
                 <div class="row">
                     <div class="col-12">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/dog-001.jpg">
+                            <img src="./images/dog-001.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- row-2 -->
-                <div class="row ">
+                <div class="row">
                     <div class="col-4">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/dog-002.jpg">
+                            <img src="./images/dog-002.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-5">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/dog-003.jpg">
+                            <img src="./images/dog-003.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-3">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/dog-004.jpg">
+                            <img src="./images/dog-004.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- row-3 -->
                 <div class="row">
                     <div class="col-4">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/dog-005.jpg">
+                            <img src="./images/dog-005.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-8">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/pic02.jpg">
+                            <img src="./images/pic02.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- row-4 -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="" style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/pic02.jpg">
+                            <img src="./images/pic02.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- row-5 -->
                 <div class="row">
                     <div class="col-4">
-                        <div class="" style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/pic02.jpg">
+                            <img src="./images/pic02.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-5">
-                        <div class="" style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/pic02.jpg">
+                            <img src="./images/pic02.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-3">
-                        <div class="" style="background:url('./images/pic02.jpg')center center"></div>
+                        <a href="./images/pic02.jpg">
+                            <img src="./images/pic02.jpg">
+                            <div class="info">
+                                <p>Hello World!</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-4 p-0">
-                        <div class="half" style="background:url('./images/pic02.jpg')center center"></div>
-                        <div class="half" style="background:url('./images/pic03.jpg')center center"></div>
-                    </div>
-                    <div class="col-md-8 p-0" style="background:url('./images/pic04.jpg')center center"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 p-0">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
-                    </div>
-                    <div class="col-md-6 p-0">
-                        <div style="background:url('./images/pic03.jpg')center center"></div>
-                    </div>
-                    <div class="col-md-3 p-0">
-                        <div style="background:url('./images/pic04.jpg')center center"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 p-0">
-                        <div style="background:url('./images/pic02.jpg')center center"></div>
-                    </div>
-                    <div class="col-md-3 p-0">
-                        <div style="background:url('./images/pic03.jpg')center center"></div>
-                    </div>
-                    <div class="col-md-5 p-0">
-                        <div style="background:url('./images/pic04.jpg')center center"></div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
 
 
-    <!-- light-case -->
-    <script src="./js/lightcase.js"></script>
-    <script>
-        $('.showcase').lightcase();
-    </script>
+
     <!-- //light-case -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
