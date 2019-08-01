@@ -1,0 +1,76 @@
+html,
+body {
+    font-size: 100%;
+    background: #ffc107;
+    background-repeat: repeat;
+    margin: 0;
+    font-family: 'Open Sansw3-banner-head-info', sans-serif;
+}
+
+p,
+ul li,
+ol li {
+    margin: 0;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+ul,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*--header end here--*/
+
+.banner {
+    background: url(../images/banner.jpg)no-repeat center;
+    background-size: cover;
+}
+
+
+/* start homepage - img */
+
+.row:nth-of-type(1)>div[class^="col"]>div {
+    height: 400px;
+}
+
+.row:nth-of-type(1)>div[class^="col"]>div.half {
+    height: 200px;
+}
+
+.row:nth-of-type(2)>div[class^="col"]>div {
+    height: 200px;
+}
+
+.row:nth-of-type(3)>div[class^="col"]>div {
+    height: 200px;
+}
+
+@media(max-width: 640px) {
+    .row>div>div {
+        height: 300px !important;
+    }
+}
+
+
+/* end homepage - img */
