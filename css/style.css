@@ -47,30 +47,41 @@ img {
     background-size: cover;
 }
 
-
 /* start homepage - img */
-
-.row:nth-of-type(1)>div[class^="col"]>div {
-    height: 400px;
+#imglist .row {
+    padding: 0 0 10px 0 ;
 }
-
-.row:nth-of-type(1)>div[class^="col"]>div.half {
+#imglist .row div[class^="col"]{
+    padding: 0;
+    padding-right: 10px;
+}
+#imglist .row div[class^="col"]:last-child{
+    padding: 0;
+}
+#imglist .row:nth-of-type(1)>div[class^="col"]>div {
+    height: 300px;
+}
+#imglist .row:nth-of-type(2)>div[class^="col"]>div {
     height: 200px;
 }
-
-.row:nth-of-type(2)>div[class^="col"]>div {
+#imglist .row:nth-of-type(3)>div[class^="col"]>div {
     height: 200px;
 }
-
-.row:nth-of-type(3)>div[class^="col"]>div {
+#imglist .row:nth-of-type(4)>div[class^="col"]>div {
+    height: 170px;
+}
+#imglist .row:nth-of-type(5)>div[class^="col"]>div {
     height: 200px;
 }
 
 @media(max-width: 640px) {
-    .row>div>div {
+    #imglist .row>div>div {
         height: 300px !important;
     }
 }
 
+#imglist .row .div :hover{
+    height: 400px;
+}
 
 /* end homepage - img */
