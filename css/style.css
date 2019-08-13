@@ -1,7 +1,8 @@
 html,
 body {
     font-size: 100%;
-    background: #d2ac3c;
+    /* background: #d2ac3c; */
+    background: url('../images/bgc.png');
     background-repeat: repeat;
     margin: 0;
     font-family: 'Open Sansw3-banner-head-info', sans-serif;
@@ -50,61 +51,6 @@ img {
 
 /* start homepage - img */
 
-#imglist .row {
-    padding: 0 0 10px 0;
-}
-
-#imglist .row div[class^="col"] {
-    padding: 0;
-    padding-right: 10px;
-}
-
-#imglist .row div[class^="col"]:last-child {
-    padding: 0;
-}
-
-#imglist .row:nth-of-type(1)>div[class^="col"]>a>img {
-    height: 100%;
-}
-
-#imglist .row:nth-of-type(2)>div[class^="col"]>a>img {
-    height: 100%;
-}
-
-#imglist .row:nth-of-type(3)>div[class^="col"]>a>img {
-    height: 100%;
-}
-
-#imglist .row:nth-of-type(4)>div[class^="col"]>a>img {
-    height: 100%;
-}
-
-#imglist .row:nth-of-type(5)>div[class^="col"]>a>img {
-    height: 100%;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 640px) {
-    #imglist .row>div>a>img {
-        height: 250px !important;
-    }
-    #imglist .row {
-        padding: 0;
-        padding-bottom: 10px;
-    }
-    #imglist .row div[class^="col"] {
-        padding: 0;
-        padding-bottom: 10px;
-        max-width: 100%!important;
-        flex: 100%!important;
-    }
-}
-
 .info {
     /*   display: none; */
     opacity: 0;
@@ -126,6 +72,64 @@ img {
 .info:hover {
     -webkit-transition: 500ms;
     opacity: 1;
+}
+
+.img_box,
+.imgtwo .img_box,
+.imgthree .img_box {
+    background-size: 100%!important;
+    margin-right: 2%;
+    padding-bottom: 39%;
+}
+
+
+/*單張*/
+
+.imgone .img_box {
+    width: 100%;
+    /*讓第一張的寬度等於上排的第一張寬度*/
+}
+
+
+/*兩張*/
+
+.imgtwo .img_box:nth-of-type(1n) {
+    width: calc(100%/3 - 1%);
+    /*讓第一張的寬度等於上排的第一張寬度*/
+}
+
+.imgtwo .img_box:nth-of-type(2n) {
+    width: calc(100% - (100%/3) - 1%);
+    /*讓第二張寬度等於上面兩張照片的寬度，所以是 100% 減 (上面所得的寬度) 減 外距 */
+}
+
+
+/*三張*/
+
+.imgthree .img_box {
+    width: calc(100%/3 - 1%);
+}
+
+
+/*排列*/
+
+.img_showlist .col-12 {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+
+/*移除最後的右邊外距*/
+
+.img_showlist .col-12 div:last-child {
+    margin-right: 0;
+}
+
+
+/*只是想讓畫面比較好看*/
+
+.container {
+    margin-top: 50px;
 }
 
 
