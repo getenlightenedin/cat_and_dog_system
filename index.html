@@ -11,71 +11,129 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!--load all styles -->
 </head>
 
 <body>
 
     <!-- ==================header================== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <a class="navbar-brand" href="#">LungLung</a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">犬<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">貓</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--banner-info-->
-    <div class="banner">
-        <div class="container">
-            <div class="row mt-0">
-                <h2 class="col-12 mt-5 text-light">篩選照片選單區塊</h2>
-                <div class="col-12 my-5">
-                    <form>
-                        <div class="form-row">
+    <header id="header">
+        <!-- <a href="index.html" class="logo">Theory</a>
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="generic.html">Generic</a>
+                <a href="elements.html">Elements</a>
+            </nav>
+            <a href="#navPanel" class="navPanelToggle"><i class="fa fa-bars" aria-hidden="true"></i></a> -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">浪浪</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-                            <div class="form-group col-md-4 p-3">
-                                <label for="inputState1">品種</label>
-                                <select id="inputState1" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">領養浪浪 <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">物資募集</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--banner-info-->
+    <section id="indexbanner" class="banner">
+        <div class="inner">
+            <div class="row mt-0">
+                <div id="form-select-block" class="col-10 my-5 mx-auto">
+                    <form class="mt-3">
+                        <div class="form-row">
+                            <div class="col">
+                                <select class="form-control">
+                                    <option selected>品種...</option>
+                                    <option>台灣土狗</option>
+                                    <option>米克斯</option>
+                                    <option>米格魯</option>
+                                    <option>法鬥</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4 p-3">
-                                <label for="inputState2">毛色</label>
-                                <select id="inputState2" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                            <div class="col">
+                                <select class="form-control">
+                                    <option selected>毛色...</option>
+                                    <option>黑色</option>
+                                    <option>白色</option>
+                                    <option>黃色</option>
+                                    <option>混色</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4 p-3">
-                                <label for="inputState3">性別</label>
-                                <select id="inputState3" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                            <div class="col">
+                                <select class="form-control">
+                                    <option selected>性別...</option>
+                                    <option>公</option>
+                                    <option>母</option>
+                                    <option>不確定</option>
                                 </select>
+                            </div>
+                            <button id="search-btn" type="submit" class="col btn btn-border">尋找浪浪</button>
+                        </div>
+                        <div class="form-row mt-4">
+                            <div id="inputState4" class="col" style="display: none;">
+                                <!-- 年紀 -->
+                                <select class="form-control">
+                                    <option selected>年紀...</option>
+                                    <option>0~1歲</option>
+                                    <option>1~5歲</option>
+                                    <option>5~10歲</option>
+                                    <option>10歲以上</option>
+                                </select>
+                            </div>
+                            <div id="inputState5" class="col" style="display: none;">
+                                <!-- 特徵 -->
+                                <select class="form-control">
+                                    <option selected>特徵...</option>
+                                    <option>異色瞳孔</option>
+                                    <option>翹耳</option>
+                                    <option>長毛</option>
+                                    <option>短毛</option>
+                                </select>
+                            </div>
+                            <div id="inputState6" class="col" style="display: none;">
+                                <!-- 訓練 -->
+                                <select class="form-control">
+                                    <option selected>訓練...</option>
+                                    <option>公</option>
+                                    <option>母</option>
+                                    <option>不確定</option>
+                                </select>
+                            </div>
+                            <div id="inputState7" class="col" style="display: none;">
+                                <select class="form-control">
+                                            <option selected>性別...</option>
+                                            <option>公</option>
+                                            <option>母</option>
+                                            <option>不確定</option>
+                                        </select>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <p id="selectmore-btn" class="ml-auto my-3">顯示更多篩選</p>
                             </div>
 
                         </div>
-                        <button type="submit" class="mx-auto btn btn-secondary ">Sign in</button>
-
                     </form>
                 </div>
             </div>
+            <a href="#img-main" class="more">more</a>
         </div>
-    </div>
+    </section>
     <!--/banner-info-->
 
-    <div class="row my-5 mx-auto">
+    <div id="img-main" class="row py-5 mx-auto">
         <div id="home-sidebar" class="col-12 col-md-3">
             <div id="SelectValue" class="border rounded p-2 mb-5">
                 選擇器
@@ -172,13 +230,10 @@
             </div>
         </div>
     </div>
+    <!-- script -->
 
+    <script type="text/javascript" src="js/all.js"></script>
 
-
-    <!-- //light-case -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
-</html
+</html>
